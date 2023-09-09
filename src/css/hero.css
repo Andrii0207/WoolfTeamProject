@@ -3,7 +3,7 @@
   padding-bottom: 80px;
 }
 @media screen and (min-width: 768px) {
-.hero {
+  .hero {
     padding-top: 32px;
     padding-bottom: 100px;
   }
@@ -30,52 +30,45 @@
   background-size: cover;
 }
 
-@media (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero-wrapper {
     background-image: url('../img/hero/hero-mobile@2x.jpg');
   }
 }
 
 @media screen and (min-width: 768px) {
-
   .hero-wrapper {
     max-width: 704px;
     padding-top: 260px;
     padding-bottom: 295px;
     padding-left: 32px;
     padding-right: 32px;
-   
-    border-radius: var(--default-border-radius);
-    background-image:
-      url('../img/hero/hero-tablet.jpg');
-  }
 
+    border-radius: var(--default-border-radius);
+    background-image: url('../img/hero/hero-tablet.jpg');
+  }
 }
 
 @media (min-width: 768px) and (min-device-pixel-ratio: 2),
-(min-width: 768px) and (min-resolution: 192dpi),
-(min-width: 768px) and (min-resolution: 2dppx) {
+  (min-width: 768px) and (min-resolution: 192dpi),
+  (min-width: 768px) and (min-resolution: 2dppx) {
   .hero-wrapper {
     background-image: url('../img/hero/hero-tablet@2x.jpg');
   }
 }
 
 @media screen and (min-width: 1280px) {
-
   .hero-wrapper {
     max-width: 1152px;
     padding: 164px 64px;
-  
-    background-image:
-      url('../img/hero/hero-desktop.jpg');
+
+    background-image: url('../img/hero/hero-desktop.jpg');
   }
 }
 
 @media (min-width: 1280px) and (min-device-pixel-ratio: 2),
-(min-width: 1280px) and (min-resolution: 192dpi),
-(min-width: 1280px) and (min-resolution: 2dppx) {
+  (min-width: 1280px) and (min-resolution: 192dpi),
+  (min-width: 1280px) and (min-resolution: 2dppx) {
   .hero-wrapper {
     background-image: url('../img/hero/hero-desktop@2x.jpg');
   }
@@ -152,17 +145,16 @@
   justify-content: center;
   align-items: center;
 
-  background-color: #fff;
+  background-color: var(--white);
   border-radius: 50%;
   width: 38px;
   height: 38px;
-  /* border: solid 3px var(--accent); */
 
   fill: var(--accent);
   transition: all 250ms var(--default-transition-function);
 }
 
-@media screen and  (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .hero-scroll {
     bottom: 32px;
     right: 32px;
@@ -175,5 +167,5 @@
 .hero-scroll:focus,
 .hero-scroll:active {
   background-color: var(--accent);
-  fill: #fff;
+  fill: var(--white);
 }
